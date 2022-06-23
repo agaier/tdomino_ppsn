@@ -1,42 +1,32 @@
-example_project
+T-DominO MAP-Elites
 ==============================
 
-Example project structure.
 
-Project Organization
+![](assets/01_overview.png)
+
+Publication
 ------------
+T-DominO is a simple method of optimizing multiple objective in MAP-Elites, targeting design exploration problems. It does _not_ find a Pareto front of solutions, but a single balanced solution in each bin.
 
-    │
-    ├── data/               <- The original, immutable data dump. 
-    │
-    ├── figures/            <- Figures saved by scripts or notebooks.
-    │
-    ├── notebooks/          <- Jupyter notebooks. Naming convention is a short `-` delimited 
-    │                         description, a number (for ordering), and the creator's initials,
-    │                        e.g. `initial-data-exploration-01-hg`.
-    │
-    ├── output/             <- Manipulated data, logs, etc.
-    │
-    ├── tests/              <- Unit tests.
-    │
-    ├── exampleproject/     <- Python module with source code of this project.
-    │
-    ├── environment.yml     <- conda virtual environment definition file.
-    │
-    ├── LICENSE
-    │
-    ├── Makefile            <- Makefile with commands like `make environment`
-    │
-    ├── README.md           <- The top-level README for developers using this project.
-    │
-    └── tox.ini             <- tox file with settings for running tox; see tox.testrun.org
+Published at PPSN 2020. Full paper w/supplemental material on [arxiv](tbd).
+
+<!--```bibtex
+@inproceedings{tdomino2022,
+  title={T-Domino: Exploring Multiple Criteria with Quality Diversity and Tournament Dominance Objective},
+  author={Gaier, Adam and Stoddart, Jim and Villaggi, Lorenzo and Bentley, Peter},
+  booktitle={International Conference on Parallel Problem Solving from Nature},
+  year={2022},
+  organization={Springer}
+```-->
 
 
 --------
 
 
-Set up
+Code
 ------------
+T-DominO is implemented as a type of archive in the PyRibs framework, overriding the `add` method to base tournaments on T-DominO rather than fitness. PyRibs and other dependencies are included in the environment, so getting it to run should be as simple as this:
+
 
 Install the virtual environment with conda and activate it:
 
@@ -57,7 +47,7 @@ Install `tdomino` in the virtual environment:
 $ pip install -e .
 ```
 
-Test that everything runs
+Test that a basic example runs
 
 ```bash
 $ python test_run.py
