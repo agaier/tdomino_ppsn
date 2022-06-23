@@ -15,7 +15,5 @@ setup(
 
     packages=find_packages(exclude=['data', 'figures', 'output', 'notebooks']),
 
-    long_description=read('README.md'),
-
     version="0.0.2",
 )
