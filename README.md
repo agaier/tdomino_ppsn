@@ -1,8 +1,7 @@
 T-DominO MAP-Elites
 ==============================
 
-
-![](assets/01_overview.png)
+![](assets/tdomino.png)
 
 Publication
 ------------
@@ -18,9 +17,6 @@ Published at PPSN 2020. Full paper w/supplemental material on [arxiv](tbd).
   year={2022},
   organization={Springer}
 ```-->
-
-
---------
 
 
 Code
