@@ -31,7 +31,7 @@ $ conda env create -f environment.yml
 $ conda activate tdomino
 ```
 
-Install `bbq` (PyRibs boilerplate) in the virtual environment:
+Install alpha version of `bbq` (PyRibs boilerplate) in the virtual environment:
 
 ```bash
 $ cd bbq; pip install -e .; cd ../
